@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.heartbeat {
+  animation: heartbeatAnimation 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes heartbeatAnimation {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
